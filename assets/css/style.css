@@ -1396,8 +1396,8 @@ desperate modifications
   color: #eb5d1e !important;
 }
 .des-mod2 {
-  padding-top: 16px;
+  padding-top: 16px !important;
 }
 .des-mod3 {
-  padding-top: 40px;
+  padding-top: 40px !important;
 }
