@@ -89,7 +89,6 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-
   /**
    * Mobile nav toggle
    */
