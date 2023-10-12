@@ -29,6 +29,7 @@
 
   <!-- ***Template Main CSS File*** -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/accordion.js" defer></script>
 
 </head>
 <body>
@@ -44,12 +45,41 @@
         
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-            <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link gallery-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Join the Community</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">I want to work at LOCK</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#">I have waste</a></li>
+              <li><a href="#">I process waste</a></li>
+              <li><a href="#">I want training/ education</a></li>
+              <li><a href="#">I want to buy sustainable products</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Our Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Waste drop off</a></li>
+              <li><a href="#">Waste sorting and processing</a></li>
+              <li><a href="#">Education and Awareness</a></li>
+              <li><a href="#">Swap shop</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">About Us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+          </li>
           <li><a class="getstarted" href="get-involved.html">Get Involved</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -100,7 +130,7 @@
             <ul class="faq-list des-mod" data-aos="fade-up" data-aos-delay="100">
 
               <li class="des-mod1">
-                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Read more/less</div>
+                <div data-bs-toggle="collapse" id="read-more" class="collapsed question" href="#faq1">Read more</div>
                 <div id="faq1" class="collapse" data-bs-parent=".faq-list">
                   <p class="des-mod2">
                     We have been spearheading separation at source which is the separation of waste into two categories (wet and dry) as we are still introducing this lifestyle we do not want to complicate the separating from household level in order to make it convenient for residents in our community to adopt it for the sole purpose of recovering valuable materials that are clean (high value) not contaminated for their diversion away from landfill to further sort and channel into the appropriate “afterlife”.
@@ -136,9 +166,9 @@
           <!-- ===== Sustainable goals -->
       <div class="section-title des-mod3">
         <h2>Sustainable Development Goals</h2>
-        <div>
+        <!-- <div>
           <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer"><img src="assets/img/web/english_SDG_17goals_poster_all_languages_with_UN_emblem_1.png" alt="lock" class="logo2" style="margin-top: 10px; padding: 30px;"></a>
-        </div>
+        </div> -->
         <p class="hr" style="margin-top: 30px;">Love Our City Clean speaks in 5 of the United Nations Sustainable Development Goals</p>
       </div>
       <!-- sdg cards -->
@@ -234,7 +264,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-recycle"></i></div>
-              <h4 class="title"><a href="Waste Management.html">Waste Management</a></h4>
+              <h4 class="title"><a href="#">Waste Management</a></h4>
               <p class="description">We specialise in comprehensive waste management solutions, ensuring the efficient handling and responsible disposal of all types of waste.<br>Read more</p>
             </div>
           </div>
@@ -242,7 +272,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-spray-can"></i></div>
-              <h4 class="title"><a href="">Place-Making</a></h4>
+              <h4 class="title"><a href="#">Place-Making</a></h4>
               <p class="description">We use place-making to create engaging waste management spaces that educate and inspire communities. Our approach integrates art, design, and functionality to foster sustainable practices and raise awareness about responsible waste disposal.<br>Read More</p>
             </div>
           </div>
@@ -250,7 +280,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-book-reader"></i></div>
-              <h4 class="title"><a href="">Workshops + Education</a></h4>
+              <h4 class="title"><a href="#">Workshops + Education</a></h4>
               <p class="description">We curate empowering workshops, educating individuals about safeguarding the environment and inspiring sustainable actions.<br>Read more</p>
             </div>
           </div>
@@ -258,7 +288,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-shopping-bag"></i></div>
-              <h4 class="title"><a href="">Green Products</a></h4>
+              <h4 class="title"><a href="#">Green Products</a></h4>
               <p class="description">We utilize waste management practices to produce green products and engage in goods rescue for reutilization and more!<br>View products</p>
             </div>
           </div>
@@ -390,16 +420,16 @@
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="Waste Management.html">Waste Management</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="Placemaking.html">Place-Making</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="Workshop + Education.html">Workshops & Education</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="Products.html">Green Products</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Waste Management</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Place-Making</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Workshops & Education</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Green Products</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Our Social Networks</h4>
-          <p>Follow us and like our pages on the following social media networks for more exciting information about us.</p>
+          <p>Follow us and like our pages on the following social media networks to keep updated with our work.</p>
           <div class="social-links mt-3">
             <a href="https://www.instagram.com/weloveourcityklean/?hl=en" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
             <a href="https://web.facebook.com/LoveOurCityKlean/?_rdc=1&_rdr" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
